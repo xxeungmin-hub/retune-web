@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <title>RETUNE SIGNAL GAME</title>
+</head>
+
+
+<body>
+
+
+  <main
+    class="game-page"
+    id="gamePage"
+  >
+
+
+    <!-- =====================================
+         BACKGROUND
+    ====================================== -->
+
+    <div class="game-bg">
+
+      <div class="game-glow glow-left"></div>
+      <div class="game-glow glow-right"></div>
+      <div class="game-glow glow-center"></div>
+
+      <div class="game-noise"></div>
+
+    </div>
+
+
+
+    <!-- =====================================
+         HEADER
+    ====================================== -->
+
+    <header class="game-header">
+
+      <a
+        href="/"
+        class="game-logo-link"
+        aria-label="RETUNE home"
+      >
+        <img
+          src="/game-logo.svg"
+          alt="RETUNE"
+          class="game-logo"
+        >
+      </a>
+
+
+      <nav class="game-nav">
+
+        <a href="#">
+          Contact us
+        </a>
+
+        <a href="#">
+          About
+        </a>
+
+        <span>
+          [001]
+        </span>
+
+      </nav>
+
+    </header>
+
+
+
+    <!-- =====================================
+         BACK TYPO / RETUNE
+    ====================================== -->
+
+    <div class="back-type type-retune">
+
+      <div class="svg-type-track track-left">
+
+        <img src="/game-type-retune.svg" alt="">
+        <img src="/game-type-retune.svg" alt="">
+        <img src="/game-type-retune.svg" alt="">
+        <img src="/game-type-retune.svg" alt="">
+
+      </div>
+
+    </div>
+
+
+
+    <!-- =====================================
+         BACK TYPO / SIGNAL
+    ====================================== -->
+
+    <div class="back-type type-signal">
+
+      <div class="svg-type-track track-right">
+
+        <img src="/game-type-signal.svg" alt="">
+        <img src="/game-type-signal.svg" alt="">
+        <img src="/game-type-signal.svg" alt="">
+        <img src="/game-type-signal.svg" alt="">
+
+      </div>
+
+    </div>
+
+
+
+    <!-- =====================================
+         BACK TYPO / GAME
+    ====================================== -->
+
+    <div class="back-type type-game">
+
+      <div class="svg-type-track track-slow">
+
+        <img src="/game-type-game.svg" alt="">
+        <img src="/game-type-game.svg" alt="">
+        <img src="/game-type-game.svg" alt="">
+        <img src="/game-type-game.svg" alt="">
+
+      </div>
+
+    </div>
+
+
+
+    <!-- =====================================
+         HUMAN STAGE
+    ====================================== -->
+
+    <section class="human-stage">
+
+      <div class="human-orbit orbit-one"></div>
+      <div class="human-orbit orbit-two"></div>
+
+
+      <div class="particle p1"></div>
+      <div class="particle p2"></div>
+      <div class="particle p3"></div>
+      <div class="particle p4"></div>
+      <div class="particle p5"></div>
+      <div class="particle p6"></div>
+
+
+      <div class="human-aura"></div>
+
+
+      <img
+        src="/game-human.png"
+        alt=""
+        class="game-human"
+      >
+
+
+      <div class="human-scan"></div>
+
+    </section>
+
+
+
+    <!-- =====================================
+         MICRO COPY
+    ====================================== -->
+
+    <div class="game-copy copy-left">
+
+      <span>ANALYZE</span>
+      <span>YOUR SIGNAL_</span>
+      <span>RETUNE</span>
+      <span>YOUR LIFE.</span>
+
+    </div>
+
+
+    <div class="game-copy copy-right">
+
+      <span>YOUR BODY</span>
+      <span>YOUR DATA</span>
+      <span>YOUR GAME_</span>
+
+    </div>
+
+
+
+    <!-- =====================================
+         START BUTTON
+    ====================================== -->
+
+    <button
+      class="game-start"
+      id="gameStart"
+      type="button"
+    >
+
+      <span class="start-label">
+        게임 시작
+      </span>
+
+      <span class="start-arrow">
+        →
+      </span>
+
+    </button>
+
+
+
+    <!-- =====================================
+         STATUS
+    ====================================== -->
+
+    <div class="game-status">
+
+      <span class="status-dot active"></span>
+      <span class="status-dot active"></span>
+      <span class="status-dot"></span>
+
+    </div>
+
+</main>
+
+
+<section class="calibration" id="calibration">
+
+  <div class="calibration-panel">
+
+    <p class="calibration-label">
+      SYSTEM INITIALIZING
+    </p>
+
+    <h2>
+      HAND SIGNAL DETECTION
+    </h2>
+
+    <p class="calibration-desc">
+      손을 화면 안에서 움직여<br>
+      움직임 데이터를 연결하세요
+    </p>
+
+<div class="scan-human">
+
+ <video
+  id="cameraVideo"
+  autoplay
+  playsinline
+  muted
+></video>
+
+  <canvas
+    id="trackingCanvas"
+  ></canvas>
+
+
+  <div class="scan-circle"></div>
+
+  <div class="scan-line"></div>
+
+</div>
+
+    <div class="tracking">
+
+      <span>TRACKING</span>
+
+      <strong>0%</strong>
+
+    </div>
+
+
+    <button class="allow-camera">
+      Allow Access →
+    </button>
+
+
+  </div>
+
+</section>
+<!-- =====================================
+     RETUNE SIGNAL GAME
+====================================== -->
+
+<section class="signal-game" id="signalGame">
+
+  <video
+    id="gameCameraVideo"
+    autoplay
+    playsinline
+    muted
+  ></video>
+
+  <div class="signal-game-bg"></div>
+
+  <canvas id="gameTrackingCanvas"></canvas>
+
+  <div class="game-orb-layer" id="gameOrbLayer"></div>
+
+
+  <!-- HUD -->
+
+  <div class="signal-game-hud">
+
+    <div class="hud-left">
+
+      <span class="hud-label">
+        RETUNE SIGNAL
+      </span>
+
+      <strong id="gameScore">
+        000
+      </strong>
+
+      <span class="hud-total">
+        / 100
+      </span>
+
+    </div>
+
+
+    <div class="hud-center">
+      CATCH YOUR HEALTH SIGNAL
+    </div>
+
+
+    <div class="hud-right">
+
+      <span class="hud-label">
+        TIME
+      </span>
+
+      <strong id="gameTimer">
+        30
+      </strong>
+
+    </div>
+
+  </div>
+
+
+  <!-- countdown -->
+
+  <div class="game-countdown" id="gameCountdown">
+    <strong>3</strong>
+  </div>
+
+
+  <!-- catch feedback -->
+
+  <div class="catch-feedback" id="catchFeedback">
+    +10
+  </div>
+
+</section>
+
+ <link rel="stylesheet" href="./game.css">
+
+<script type="module" src="./game.js"></script>
+
+</body>
+
+</html>

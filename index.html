@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <title>Retune</title>
+</head>
+
+
+<body>
+
+
+  <!-- =====================================
+       01 / MAIN TUNNEL
+  ====================================== -->
+
+  <main
+    class="hero"
+    id="hero"
+  >
+
+    <video
+      id="tunnelVideo"
+      class="tunnel-video"
+      src="/tunnel.mp4"
+      muted
+      playsinline
+      preload="auto"
+    ></video>
+
+
+    <img
+      src="/logo.svg"
+      alt="RETUNE"
+      class="hero-logo"
+    >
+
+
+    <!-- SOUND PLAYER -->
+
+    <button
+      id="soundControl"
+      class="sound-control"
+      type="button"
+      aria-label="Play or pause background music"
+    >
+
+      <div class="sound-machine">
+
+        <img
+          src="/sound-disc.png"
+          alt=""
+          class="sound-disc"
+        >
+
+        <img
+          src="/sound-frame.png"
+          alt=""
+          class="sound-frame"
+        >
+
+      </div>
+
+    </button>
+
+
+    <!-- TOP NAV -->
+
+    <nav class="top-nav">
+
+      <a
+        href="#"
+        class="nav-link"
+      >
+        Contact us
+      </a>
+
+      <a
+        href="#"
+        class="nav-link"
+      >
+        About
+      </a>
+
+      <span class="nav-index">
+        [001]
+      </span>
+
+    </nav>
+
+
+    <!-- SCROLL ORB -->
+
+    <button
+      class="scroll-orb"
+      id="scrollOrb"
+      type="button"
+    >
+      Scroll!
+    </button>
+
+
+    <!-- GO BUTTON -->
+
+    <button
+      class="go-button"
+      id="goButton"
+      type="button"
+    >
+      <span class="go-label">
+        GO
+      </span>
+
+      <span class="go-arrow">
+        ↘
+      </span>
+    </button>
+
+
+    <audio
+      id="bgm"
+      src="/bgm.mp3"
+      loop
+      preload="auto"
+    ></audio>
+
+
+    <div
+      id="loading"
+      class="loading"
+    >
+      LOADING
+    </div>
+
+  </main>
+
+
+
+  <!-- =====================================
+       02 / BRAND SECTION
+  ====================================== -->
+
+  <section
+    class="brand-section"
+    id="brandSection"
+  >
+
+    <div class="brand-glow"></div>
+
+
+   <div class="brand-title-marquee">
+  <div class="brand-title-track">
+    <span>나의 변화에 맞춰 루틴도 지속된다</span>
+    <span>나의 변화에 맞춰 루틴도 지속된다</span>
+    <span>나의 변화에 맞춰 루틴도 지속된다</span>
+    <span>나의 변화에 맞춰 루틴도 지속된다</span>
+  </div>
+</div>
+
+    <img
+      src="/person.png"
+      alt=""
+      class="brand-person"
+    >
+
+
+    <!-- TOP TAPE -->
+
+    <div class="tape tape-top">
+
+      <div class="tape-strip tape-strip-left">
+
+        <img src="/tape.png" alt="">
+        <img src="/tape.png" alt="">
+        <img src="/tape.png" alt="">
+        <img src="/tape.png" alt="">
+
+      </div>
+
+    </div>
+
+
+    <!-- BOTTOM TAPE -->
+
+    <div class="tape tape-bottom">
+
+      <div class="tape-strip tape-strip-right">
+
+        <img src="/tape.png" alt="">
+        <img src="/tape.png" alt="">
+        <img src="/tape.png" alt="">
+        <img src="/tape.png" alt="">
+
+      </div>
+
+    </div>
+
+
+    <!-- 다시 메인으로 -->
+    <button
+      class="back-button"
+      id="backButton"
+      type="button"
+    >
+      ← BACK
+    </button>
+
+  </section>
+  <!-- CUSTOM CURSOR -->
+
+<div
+  class="cursor-lens"
+  id="cursorLens"
+></div>
+
+<div
+  class="cursor-dot"
+  id="cursorDot"
+></div>
+<!-- =====================================
+     03 / FEATURES
+====================================== -->
+
+<section
+  class="features-section"
+  id="featuresSection"
+>
+
+  <!-- 상단 타이틀 -->
+  <h2 class="features-title">
+    리튠으로 관리 해보세요!
+  </h2>
+
+
+  <!-- CARD SLIDER -->
+  <div class="features-slider">
+
+    <div class="features-track">
+
+      <!-- 첫 번째 묶음 -->
+      <div class="features-group">
+
+        <img
+          src="/feature-1.png"
+          alt=""
+          class="feature-card"
+        >
+
+        <img
+          src="/feature-2.png"
+          alt=""
+          class="feature-card"
+        >
+
+        <img
+          src="/feature-3.png"
+          alt=""
+          class="feature-card"
+        >
+
+        <img
+          src="/feature-4.png"
+          alt=""
+          class="feature-card"
+        >
+
+      </div>
+
+
+      <!-- 무한루프용 동일한 두 번째 묶음 -->
+      <div
+        class="features-group"
+        aria-hidden="true"
+      >
+
+        <img
+          src="/feature-1.png"
+          alt=""
+          class="feature-card"
+        >
+
+        <img
+          src="/feature-2.png"
+          alt=""
+          class="feature-card"
+        >
+
+        <img
+          src="/feature-3.png"
+          alt=""
+          class="feature-card"
+        >
+
+        <img
+          src="/feature-4.png"
+          alt=""
+          class="feature-card"
+        >
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- CTA -->
+  <button
+    class="features-cta"
+    id="featuresCta"
+    type="button"
+  >
+    <span>
+      사전 테스트 진행하기
+    </span>
+
+    <span class="cta-arrow">
+      ↗
+    </span>
+  </button>
+
+</section>
+<!-- =====================================
+     04 / KIT COMPOSITION
+====================================== -->
+
+<section
+  class="kit-section"
+  id="kitSection"
+>
+
+  <!-- 움직이는 유체 배경 -->
+  <div class="kit-fluid-bg">
+    <div class="fluid-blob blob-a"></div>
+    <div class="fluid-blob blob-b"></div>
+    <div class="fluid-blob blob-c"></div>
+    <div class="fluid-grain"></div>
+  </div>
+
+
+  <div class="kit-title-marquee">
+
+  <div class="kit-title-track">
+
+    <span>
+      하나의 구독으로 여러 구성을 완성해보세요!
+    </span>
+
+    <span>
+      하나의 구독으로 여러 구성을 완성해보세요!
+    </span>
+
+    <span>
+      하나의 구독으로 여러 구성을 완성해보세요!
+    </span>
+
+    <span>
+      하나의 구독으로 여러 구성을 완성해보세요!
+    </span>
+
+  </div>
+
+</div>
+
+  <!-- 처음 보이는 제품 3개 -->
+  <div
+    class="kit-products"
+    id="kitProducts"
+  >
+
+    <img
+      src="/kit-supplement.png"
+      alt=""
+      class="kit-product product-supplement"
+    >
+
+    <img
+      src="/kit-can-green.png"
+      alt=""
+      class="kit-product product-green"
+    >
+
+    <img
+      src="/kit-can-black.png"
+      alt=""
+      class="kit-product product-black"
+    >
+
+  </div>
+
+
+  <!-- 나중에 등장하는 패키지 -->
+  <div
+    class="kit-packages"
+    id="kitPackages"
+  >
+
+    <img
+      src="/kit-package-clear.png"
+      alt=""
+      class="kit-package package-clear"
+    >
+
+    <img
+      src="/kit-package-blue.png"
+      alt=""
+      class="kit-package package-blue"
+    >
+
+  </div>
+
+  <a
+  href="/game/"
+  class="kit-go-button"
+>
+  <span>GO RETUNE</span>
+  <span class="kit-go-arrow">↗</span>
+</a>
+
+</section>
+
+  <script
+    type="module"
+    src="/src/main.js"
+  ></script>
+
+</body>
+
+</html>
